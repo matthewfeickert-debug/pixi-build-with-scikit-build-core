@@ -80,7 +80,7 @@ name = "rosen-cpp"
 version = "0.1.0"
 
 [tool.pixi.package.build]
-backend = { name = "pixi-build-python", version = "*" }
+backend = { name = "pixi-build-python", version = "0.4.8.*" }
 # c.f. https://pixi.prefix.dev/latest/build/backends/pixi-build-python/#compilers
 # c.f. https://pixi.prefix.dev/latest/build/backends/pixi-build-python/#ignore-pypi-mapping
 config = { compilers = ["cxx"], ignore-pypi-mapping = false }
