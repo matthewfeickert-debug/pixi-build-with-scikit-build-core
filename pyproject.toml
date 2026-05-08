@@ -70,6 +70,28 @@ rosen-cpp = { path = "." }
 
 [tool.pixi.tasks]
 
+[tool.pixi.tasks.docker-build-pixi-build]
+description = "Build a Docker container image with rosen-cpp built by pixi-build"
+cmd = """
+docker pull ghcr.io/prefix-dev/pixi:noble && \
+docker system prune -f && \
+docker build \
+    --file ./Dockerfile \
+    --tag scikit-build-core-debug:pixi-build \
+    .
+"""
+
+[tool.pixi.tasks.docker-build-uv]
+description = "Build a Docker container image with rosen-cpp built with 'uv pip install'"
+cmd = """
+docker pull ghcr.io/prefix-dev/pixi:noble && \
+docker system prune -f && \
+docker build \
+    --file ./uv_Dockerfile \
+    --tag scikit-build-core-debug:uv \
+    .
+"""
+
 [tool.pixi.tasks.docker-build]
 cmd = "docker pull ghcr.io/prefix-dev/pixi:noble && docker build --file ./Dockerfile --tag talk-odsl-forum-seminar/pixi-build:debug ."
 
