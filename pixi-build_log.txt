@@ -1,0 +1,312 @@
+
+ ╭─ Running build for recipe: rosen-cpp-0.1.0-py314h59f3c06_0
+ │
+ │ ╭─ Fetching source code
+ │ │ No sources to fetch
+ │ │
+ │ ╰─────────────────── (took 0 seconds)
+ │
+ │ ╭─ Externally resolved dependencies recipe: rosen-cpp-0.1.0-py314h59f3c06_0
+ │ │ 
+ │ │ Resolved build dependencies(rosen-cpp-0.1.0-py314h59f3c06_0):
+ │ │ ╭──────────────────────────┬────────────────┬──────────────┬──────────────────────┬─────────────┬─────────────╮
+ │ │ │ Package                  ┆ Spec           ┆ Version      ┆ Build                ┆ Channel     ┆        Size │
+ │ │ ╞══════════════════════════╪════════════════╪══════════════╪══════════════════════╪═════════════╪═════════════╡
+ │ │ │ cmake                    ┆ cmake >=4.2.0  ┆ 4.3.2        ┆ hc85cc9f_0           ┆ conda-forge ┆   22.01 MiB │
+ │ │ │ gxx_linux-64             ┆ gxx_linux-64   ┆ 15.2.0       ┆ he30e93d_24          ┆ conda-forge ┆   26.96 KiB │
+ │ │ │ ninja                    ┆ ninja >=1.13.0 ┆ 1.13.2       ┆ h171cf75_0           ┆ conda-forge ┆  181.96 KiB │
+ │ │ │ _openmp_mutex            ┆                ┆ 4.5          ┆ 20_gnu               ┆ conda-forge ┆   28.27 KiB │
+ │ │ │ binutils_impl_linux-64   ┆                ┆ 2.45.1       ┆ default_hfdba357_102 ┆ conda-forge ┆    3.49 MiB │
+ │ │ │ binutils_linux-64        ┆                ┆ 2.45.1       ┆ default_h4852527_102 ┆ conda-forge ┆   35.45 KiB │
+ │ │ │ bzip2                    ┆                ┆ 1.0.8        ┆ hda65f42_9           ┆ conda-forge ┆  254.08 KiB │
+ │ │ │ c-ares                   ┆                ┆ 1.34.6       ┆ hb03c661_0           ┆ conda-forge ┆  203.01 KiB │
+ │ │ │ ca-certificates          ┆                ┆ 2026.4.22    ┆ hbd8a1cb_0           ┆ conda-forge ┆  127.97 KiB │
+ │ │ │ gcc_impl_linux-64        ┆                ┆ 15.2.0       ┆ he0086c7_19          ┆ conda-forge ┆   77.42 MiB │
+ │ │ │ gcc_linux-64             ┆                ┆ 15.2.0       ┆ h7be306e_24          ┆ conda-forge ┆   28.40 KiB │
+ │ │ │ gxx_impl_linux-64        ┆                ┆ 15.2.0       ┆ hda75c37_19          ┆ conda-forge ┆   15.60 MiB │
+ │ │ │ kernel-headers_linux-64  ┆                ┆ 4.18.0       ┆ he073ed8_9           ┆ conda-forge ┆    1.22 MiB │
+ │ │ │ keyutils                 ┆                ┆ 1.6.3        ┆ hb9d3cd8_0           ┆ conda-forge ┆  130.95 KiB │
+ │ │ │ krb5                     ┆                ┆ 1.22.2       ┆ ha1258a1_0           ┆ conda-forge ┆    1.32 MiB │
+ │ │ │ ld_impl_linux-64         ┆                ┆ 2.45.1       ┆ default_hbd61a6d_102 ┆ conda-forge ┆  710.94 KiB │
+ │ │ │ libcurl                  ┆                ┆ 8.20.0       ┆ hcf29cc6_0           ┆ conda-forge ┆  457.72 KiB │
+ │ │ │ libedit                  ┆                ┆ 3.1.20250104 ┆ pl5321h7949ede_0     ┆ conda-forge ┆  131.52 KiB │
+ │ │ │ libev                    ┆                ┆ 4.33         ┆ hd590300_2           ┆ conda-forge ┆  110.12 KiB │
+ │ │ │ libexpat                 ┆                ┆ 2.8.0        ┆ hecca717_0           ┆ conda-forge ┆   75.43 KiB │
+ │ │ │ libgcc                   ┆                ┆ 15.2.0       ┆ he0feb66_19          ┆ conda-forge ┆ 1016.68 KiB │
+ │ │ │ libgcc-devel_linux-64    ┆                ┆ 15.2.0       ┆ hcc6f6b0_119         ┆ conda-forge ┆    2.95 MiB │
+ │ │ │ libgcc-ng                ┆                ┆ 15.2.0       ┆ h69a702a_19          ┆ conda-forge ┆   27.04 KiB │
+ │ │ │ libgomp                  ┆                ┆ 15.2.0       ┆ he0feb66_19          ┆ conda-forge ┆  589.67 KiB │
+ │ │ │ liblzma                  ┆                ┆ 5.8.3        ┆ hb03c661_0           ┆ conda-forge ┆  110.82 KiB │
+ │ │ │ libnghttp2               ┆                ┆ 1.68.1       ┆ h877daf1_0           ┆ conda-forge ┆  647.80 KiB │
+ │ │ │ libsanitizer             ┆                ┆ 15.2.0       ┆ h90f66d4_19          ┆ conda-forge ┆    7.56 MiB │
+ │ │ │ libssh2                  ┆                ┆ 1.11.1       ┆ hcf80075_0           ┆ conda-forge ┆  297.65 KiB │
+ │ │ │ libstdcxx                ┆                ┆ 15.2.0       ┆ h934c35e_19          ┆ conda-forge ┆    5.58 MiB │
+ │ │ │ libstdcxx-devel_linux-64 ┆                ┆ 15.2.0       ┆ hd446a21_119         ┆ conda-forge ┆   19.80 MiB │
+ │ │ │ libuv                    ┆                ┆ 1.51.0       ┆ hb03c661_1           ┆ conda-forge ┆  874.13 KiB │
+ │ │ │ libzlib                  ┆                ┆ 1.3.2        ┆ h25fd6f3_2           ┆ conda-forge ┆   62.14 KiB │
+ │ │ │ ncurses                  ┆                ┆ 6.6          ┆ hdb14827_0           ┆ conda-forge ┆  897.42 KiB │
+ │ │ │ openssl                  ┆                ┆ 3.6.2        ┆ h35e630c_0           ┆ conda-forge ┆    3.02 MiB │
+ │ │ │ rhash                    ┆                ┆ 1.4.6        ┆ hb9d3cd8_1           ┆ conda-forge ┆  189.23 KiB │
+ │ │ │ sysroot_linux-64         ┆                ┆ 2.28         ┆ h4ee821c_9           ┆ conda-forge ┆   22.90 MiB │
+ │ │ │ tzdata                   ┆                ┆ 2025c        ┆ hc9c84f9_1           ┆ conda-forge ┆  116.34 KiB │
+ │ │ │ zstd                     ┆                ┆ 1.5.7        ┆ hb78ec9c_6           ┆ conda-forge ┆  587.28 KiB │
+ │ │ ╰──────────────────────────┴────────────────┴──────────────┴──────────────────────┴─────────────┴─────────────╯
+ │ │ Resolved host dependencies(rosen-cpp-0.1.0-py314h59f3c06_0):
+ │ │ ╭─────────────────────┬──────────────────────────────────────────────┬───────────┬──────────────────────┬─────────────┬─────────────╮
+ │ │ │ Package             ┆ Spec                                         ┆ Version   ┆ Build                ┆ Channel     ┆        Size │
+ │ │ ╞═════════════════════╪══════════════════════════════════════════════╪═══════════╪══════════════════════╪═════════════╪═════════════╡
+ │ │ │ libgcc              ┆ libgcc >=15 (RE of [build: gxx_linux-64])    ┆ 15.2.0    ┆ he0feb66_19          ┆ conda-forge ┆ 1016.68 KiB │
+ │ │ │ libstdcxx           ┆ libstdcxx >=15 (RE of [build: gxx_linux-64]) ┆ 15.2.0    ┆ h934c35e_19          ┆ conda-forge ┆    5.58 MiB │
+ │ │ │ pybind11            ┆ pybind11 >=2.10.0                            ┆ 3.0.3     ┆ pyhfe8187e_0         ┆ conda-forge ┆  242.15 KiB │
+ │ │ │ python              ┆ python 3.14.*                                ┆ 3.14.4    ┆ habeac84_100_cp314   ┆ conda-forge ┆   35.01 MiB │
+ │ │ │ scikit-build-core   ┆ scikit-build-core >=0.5.0                    ┆ 0.12.1    ┆ pyh04d0eab_0         ┆ conda-forge ┆  218.67 KiB │
+ │ │ │ setuptools_scm      ┆ setuptools_scm                               ┆ 9.2.2     ┆ hd8ed1ab_0           ┆ conda-forge ┆    6.50 KiB │
+ │ │ │ uv                  ┆ uv                                           ┆ 0.11.11   ┆ h29f5ae7_0           ┆ conda-forge ┆   18.29 MiB │
+ │ │ │ _openmp_mutex       ┆                                              ┆ 4.5       ┆ 20_gnu               ┆ conda-forge ┆   28.27 KiB │
+ │ │ │ bzip2               ┆                                              ┆ 1.0.8     ┆ hda65f42_9           ┆ conda-forge ┆  254.08 KiB │
+ │ │ │ ca-certificates     ┆                                              ┆ 2026.4.22 ┆ hbd8a1cb_0           ┆ conda-forge ┆  127.97 KiB │
+ │ │ │ exceptiongroup      ┆                                              ┆ 1.3.1     ┆ pyhd8ed1ab_0         ┆ conda-forge ┆   20.83 KiB │
+ │ │ │ importlib-metadata  ┆                                              ┆ 8.8.0     ┆ pyhcf101f3_0         ┆ conda-forge ┆   33.58 KiB │
+ │ │ │ importlib-resources ┆                                              ┆ 7.1.0     ┆ pyhd8ed1ab_0         ┆ conda-forge ┆   10.11 KiB │
+ │ │ │ importlib_resources ┆                                              ┆ 7.1.0     ┆ pyhd8ed1ab_0         ┆ conda-forge ┆   33.99 KiB │
+ │ │ │ ld_impl_linux-64    ┆                                              ┆ 2.45.1    ┆ default_hbd61a6d_102 ┆ conda-forge ┆  710.94 KiB │
+ │ │ │ libexpat            ┆                                              ┆ 2.8.0     ┆ hecca717_0           ┆ conda-forge ┆   75.43 KiB │
+ │ │ │ libffi              ┆                                              ┆ 3.5.2     ┆ h3435931_0           ┆ conda-forge ┆   57.22 KiB │
+ │ │ │ libgomp             ┆                                              ┆ 15.2.0    ┆ he0feb66_19          ┆ conda-forge ┆  589.67 KiB │
+ │ │ │ liblzma             ┆                                              ┆ 5.8.3     ┆ hb03c661_0           ┆ conda-forge ┆  110.82 KiB │
+ │ │ │ libmpdec            ┆                                              ┆ 4.0.0     ┆ hb03c661_1           ┆ conda-forge ┆   90.23 KiB │
+ │ │ │ libsqlite           ┆                                              ┆ 3.53.1    ┆ h0c1763c_0           ┆ conda-forge ┆  932.58 KiB │
+ │ │ │ libuuid             ┆                                              ┆ 2.42      ┆ h5347b49_0           ┆ conda-forge ┆   39.35 KiB │
+ │ │ │ libzlib             ┆                                              ┆ 1.3.2     ┆ h25fd6f3_2           ┆ conda-forge ┆   62.14 KiB │
+ │ │ │ ncurses             ┆                                              ┆ 6.6       ┆ hdb14827_0           ┆ conda-forge ┆  897.42 KiB │
+ │ │ │ openssl             ┆                                              ┆ 3.6.2     ┆ h35e630c_0           ┆ conda-forge ┆    3.02 MiB │
+ │ │ │ packaging           ┆                                              ┆ 26.2      ┆ pyhc364b38_0         ┆ conda-forge ┆   89.43 KiB │
+ │ │ │ pathspec            ┆                                              ┆ 1.1.1     ┆ pyhd8ed1ab_0         ┆ conda-forge ┆   55.23 KiB │
+ │ │ │ pybind11-global     ┆                                              ┆ 3.0.3     ┆ pyh648e204_0         ┆ conda-forge ┆  238.18 KiB │
+ │ │ │ python_abi          ┆                                              ┆ 3.14      ┆ 8_cp314              ┆ conda-forge ┆    6.83 KiB │
+ │ │ │ readline            ┆                                              ┆ 8.3       ┆ h853b02a_0           ┆ conda-forge ┆  336.99 KiB │
+ │ │ │ setuptools          ┆                                              ┆ 82.0.1    ┆ pyh332efcf_0         ┆ conda-forge ┆  624.70 KiB │
+ │ │ │ setuptools-scm      ┆                                              ┆ 9.2.2     ┆ pyhd8ed1ab_0         ┆ conda-forge ┆   51.31 KiB │
+ │ │ │ tk                  ┆                                              ┆ 8.6.13    ┆ noxft_h366c992_103   ┆ conda-forge ┆    3.15 MiB │
+ │ │ │ tomli               ┆                                              ┆ 2.4.1     ┆ pyhcf101f3_0         ┆ conda-forge ┆   21.06 KiB │
+ │ │ │ typing-extensions   ┆                                              ┆ 4.15.0    ┆ h396c80c_0           ┆ conda-forge ┆   89.24 KiB │
+ │ │ │ typing_extensions   ┆                                              ┆ 4.15.0    ┆ pyhcf101f3_0         ┆ conda-forge ┆   50.48 KiB │
+ │ │ │ tzdata              ┆                                              ┆ 2025c     ┆ hc9c84f9_1           ┆ conda-forge ┆  116.34 KiB │
+ │ │ │ zipp                ┆                                              ┆ 3.23.1    ┆ pyhcf101f3_0         ┆ conda-forge ┆   23.89 KiB │
+ │ │ │ zstd                ┆                                              ┆ 1.5.7     ┆ hb78ec9c_6           ┆ conda-forge ┆  587.28 KiB │
+ │ │ ╰─────────────────────┴──────────────────────────────────────────────┴───────────┴──────────────────────┴─────────────┴─────────────╯
+ │ │ Resolved run dependencies(rosen-cpp-0.1.0-py314h59f3c06_0):
+ │ │ ╭──────────────────┬───────────────────────────────────────╮
+ │ │ │ Name             ┆ Spec                                  │
+ │ │ ╞══════════════════╪═══════════════════════════════════════╡
+ │ │ │ Run dependencies ┆                                       │
+ │ │ │ libgcc           ┆ >=15 (RE of [build: gxx_linux-64])    │
+ │ │ │ libstdcxx        ┆ >=15 (RE of [build: gxx_linux-64])    │
+ │ │ │ numpy            ┆ *                                     │
+ │ │ │ python           ┆ >=3.10                                │
+ │ │ │ python_abi       ┆ 3.14.* *_cp314 (RE of [host: python]) │
+ │ │ │ scipy            ┆ >=1.6.0                               │
+ │ │ ╰──────────────────┴───────────────────────────────────────╯
+ │ │
+ │ ╰─────────────────── (took 0 seconds)
+ │
+ │ ╭─ Running build script
+ │ │ INFO: activate-binutils_linux-64.sh made the following environmental changes:
+ │ │ +ADDR2LINE=x86_64-conda-linux-gnu-addr2line
+ │ │ +AR=x86_64-conda-linux-gnu-ar
+ │ │ +AS=x86_64-conda-linux-gnu-as
+ │ │ +CXXFILT=x86_64-conda-linux-gnu-c++filt
+ │ │ +ELFEDIT=x86_64-conda-linux-gnu-elfedit
+ │ │ +GPROF=x86_64-conda-linux-gnu-gprof
+ │ │ +LD=x86_64-conda-linux-gnu-ld
+ │ │ +NM=x86_64-conda-linux-gnu-nm
+ │ │ +OBJCOPY=x86_64-conda-linux-gnu-objcopy
+ │ │ +OBJDUMP=x86_64-conda-linux-gnu-objdump
+ │ │ +RANLIB=x86_64-conda-linux-gnu-ranlib
+ │ │ +READELF=x86_64-conda-linux-gnu-readelf
+ │ │ +SIZE=x86_64-conda-linux-gnu-size
+ │ │ +STRINGS=x86_64-conda-linux-gnu-strings
+ │ │ +STRIP=x86_64-conda-linux-gnu-strip
+ │ │ INFO: activate-gcc_linux-64.sh made the following environmental changes:
+ │ │ +BUILD=x86_64-conda-linux-gnu
+ │ │ +CC=x86_64-conda-linux-gnu-cc
+ │ │ +CC_FOR_BUILD=x86_64-conda-linux-gnu-cc
+ │ │ +CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem $PREFIX/include -fdebu
+ │ │ g-prefix-map=$SRC_DIR=/usr/local/src/conda/rosen-cpp-0.1.0 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix
+ │ │ +CMAKE_ARGS=-DCMAKE_AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPIL
+ │ │ ER_AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=$BUILD_PRE
+ │ │ FIX/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=$BUILD_PREFIX/bin/x8
+ │ │ 6_64-conda-linux-gnu-ld -DCMAKE_STRIP=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER -
+ │ │ DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY -DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY -DCMAKE_FIND_ROOT_PATH=$PREFIX;$BUILD_PREFIX/x86_64-conda-linux-gnu/sysroo
+ │ │ t -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_PROGRAM_PATH=$BUILD_PREFIX/bin;$PREFIX/bin
+ │ │ +CMAKE_PREFIX_PATH=$PREFIX:$BUILD_PREFIX/x86_64-conda-linux-gnu/sysroot/usr
+ │ │ +CONDA_BUILD_CROSS_COMPILATION=
+ │ │ +CONDA_BUILD_SYSROOT=$BUILD_PREFIX/x86_64-conda-linux-gnu/sysroot
+ │ │ +CONDA_TOOLCHAIN_BUILD=x86_64-conda-linux-gnu
+ │ │ +CONDA_TOOLCHAIN_HOST=x86_64-conda-linux-gnu
+ │ │ +CPP=x86_64-conda-linux-gnu-cpp
+ │ │ +CPPFLAGS=-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem $PREFIX/include
+ │ │ +CPP_FOR_BUILD=x86_64-conda-linux-gnu-cpp
+ │ │ +DEBUG_CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction
+ │ │ -sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/rosen-cpp-0.1.0 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-p
+ │ │ refix
+ │ │ +DEBUG_CPPFLAGS=-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem $PREFIX/include
+ │ │ +GCC=x86_64-conda-linux-gnu-gcc
+ │ │ +GCC_AR=x86_64-conda-linux-gnu-gcc-ar
+ │ │ +GCC_NM=x86_64-conda-linux-gnu-gcc-nm
+ │ │ +GCC_RANLIB=x86_64-conda-linux-gnu-gcc-ranlib
+ │ │ +HOST=x86_64-conda-linux-gnu
+ │ │ +LDFLAGS=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath
+ │ │ ,$PREFIX/lib -Wl,-rpath-link,$PREFIX/lib -L$PREFIX/lib
+ │ │ +LDFLAGS_LD=-O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath $PREFIX/lib -rpath-link $PREFIX/
+ │ │ lib -L$PREFIX/lib
+ │ │ +MESON_ARGS=-Dbuildtype=release --prefix=$PREFIX -Dlibdir=lib
+ │ │ +build_alias=x86_64-conda-linux-gnu
+ │ │ +host_alias=x86_64-conda-linux-gnu
+ │ │ -BUILD=x86_64-conda_cos6-linux-gnu
+ │ │ -CONDA_BUILD_CROSS_COMPILATION=0
+ │ │ INFO: activate-gxx_linux-64.sh made the following environmental changes:
+ │ │ +CXX=x86_64-conda-linux-gnu-c++
+ │ │ +CXXFLAGS=-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffuncti
+ │ │ on-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/rosen-cpp-0.1.0 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda
+ │ │ -prefix
+ │ │ +CXX_FOR_BUILD=x86_64-conda-linux-gnu-c++
+ │ │ +DEBUG_CXXFLAGS=-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -W
+ │ │ all -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/rosen-cpp-0.1.0 
+ │ │ -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix
+ │ │ +GXX=x86_64-conda-linux-gnu-g++
+ │ │ [34mDEBUG[39m Found workspace root: `/pixi-build-with-scikit-build-core`
+ │ │ [35mTRACE[39m Discovering workspace members for: `/pixi-build-with-scikit-build-core`
+ │ │ [34mDEBUG[39m Adding root workspace member: `/pixi-build-with-scikit-build-core`
+ │ │ [34mDEBUG[39m Skipping `pyproject.toml` in `/pixi-build-with-scikit-build-core` (no `[tool.uv]` section)
+ │ │ [34mDEBUG[39m Searching for user configuration in: `/root/.config/uv/uv.toml`
+ │ │ [34mDEBUG[39m uv 0.11.11 (x86_64-unknown-linux-gnu)
+ │ │ [34mDEBUG[39m Marking explicit source tree for reinstall: `/pixi-build-with-scikit-build-core`
+ │ │ [35mTRACE[39m Checking lock for `/root/.cache/uv` at `/root/.cache/uv/.lock`
+ │ │ [35mTRACE[39m Acquired shared lock for `/root/.cache/uv`
+ │ │ [34mDEBUG[39m Checking for Python interpreter at path `$PREFIX/bin/python`
+ │ │ [35mTRACE[39m Querying interpreter executable at $PREFIX/bin/python
+ │ │ [2mUsing Python 3.14.4 environment at: $PREFIX[0m
+ │ │ [35mTRACE[39m Checking lock for `$PREFIX` at `/tmp/uv-2c116a21c19dfc14.lock`
+ │ │ [35mTRACE[39m Acquired exclusive lock for `$PREFIX`
+ │ │ [34mDEBUG[39m Using request connect timeout of 10s and read timeout of 30s
+ │ │ [34mDEBUG[39m Found PEP 621 metadata for /pixi-build-with-scikit-build-core in `pyproject.toml` (rosen-cpp)
+ │ │ [34mDEBUG[39m Solving with installed Python version: 3.14.4
+ │ │ [34mDEBUG[39m Solving with target Python version: >=3.14.4
+ │ │ [35mTRACE[39m Assigned packages: 
+ │ │ [35mTRACE[39m Chose package for decision: root. remaining choices: 
+ │ │ [34mDEBUG[39m Adding direct dependency: rosen-cpp*
+ │ │ [35mTRACE[39m Assigned packages: root==0a0.dev0
+ │ │ [35mTRACE[39m Chose package for decision: rosen-cpp. remaining choices: 
+ │ │ [34mDEBUG[39m Searching for a compatible version of rosen-cpp @ file:///pixi-build-with-scikit-build-core (*)
+ │ │ [34mDEBUG[39m Found static `pyproject.toml` for: rosen-cpp @ file:///pixi-build-with-scikit-build-core
+ │ │ [34mDEBUG[39m No workspace root found, using project root
+ │ │ [35mTRACE[39m Received source distribution metadata for: rosen-cpp @ file:///pixi-build-with-scikit-build-core
+ │ │ [35mTRACE[39m Assigned packages: root==0a0.dev0, rosen-cpp==0.1.0
+ │ │ [34mDEBUG[39m Tried 1 versions: rosen-cpp 1
+ │ │ [34mDEBUG[39m marker environment resolution took 0.001s
+ │ │ [35mTRACE[39m Resolution: ResolverEnvironment { kind: Specific { marker_env: ResolverMarkerEnvironment(MarkerEnvironment { inner: MarkerEnvironmentInner { implemen
+ │ │ tation_name: "cpython", implementation_version: StringVersion { string: "3.14.4", version: "3.14.4" }, os_name: "posix", platform_machine: "x86_64", platfo
+ │ │ rm_python_implementation: "CPython", platform_release: "6.8.0-79-generic", platform_system: "Linux", platform_version: "#79-Ubuntu SMP PREEMPT_DYNAMIC Tue 
+ │ │ Aug 12 14:42:46 UTC 2025", python_full_version: StringVersion { string: "3.14.4", version: "3.14.4" }, python_version: StringVersion { string: "3.14", vers
+ │ │ ion: "3.14" }, sys_platform: "linux" } }) } }
+ │ │ [35mTRACE[39m Resolution edge: ROOT -> rosen-cpp
+ │ │ [35mTRACE[39m Resolution edge:     0a0.dev0 -> 0.1.0
+ │ │ [2mResolved [1m1 package[0m [2min 1ms[0m[0m
+ │ │ [34mDEBUG[39m Must revalidate requirement: rosen-cpp
+ │ │ [34mDEBUG[39m Unnecessary package: exceptiongroup==1.3.1 (from file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1763918002538/work)
+ │ │ [34mDEBUG[39m Unnecessary package: importlib-metadata==8.8.0 (from file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_importlib-metadata_177393156
+ │ │ 8/work)
+ │ │ [34mDEBUG[39m Unnecessary package: importlib-resources==7.1.0 (from file:///home/conda/feedstock_root/build_artifacts/importlib_resources_1776068706467/work)
+ │ │ [34mDEBUG[39m Unnecessary package: packaging==26.2 (from file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1777103621/work)
+ │ │ [34mDEBUG[39m Unnecessary package: pathspec==1.1.1 (from file:///home/conda/feedstock_root/build_artifacts/pathspec_1777271521463/work)
+ │ │ [34mDEBUG[39m Unnecessary package: pybind11==3.0.3 (from file:///D:/bld/bld/rattler-build_pybind11_1775004608/work)
+ │ │ [34mDEBUG[39m Unnecessary package: pybind11-global==3.0.3 (from file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pybind11-global_1775004520/work
+ │ │ )
+ │ │ [34mDEBUG[39m Unnecessary package: scikit-build-core==0.12.1 (from file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_scikit-build-core_1772209720
+ │ │ /work)
+ │ │ [34mDEBUG[39m Unnecessary package: setuptools==82.0.1
+ │ │ [34mDEBUG[39m Unnecessary package: setuptools-scm==9.2.2 (from file:///home/conda/feedstock_root/build_artifacts/setuptools_scm_1760964989229/work)
+ │ │ [34mDEBUG[39m Unnecessary package: tomli==2.4.1 (from file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_tomli_1774492402/work)
+ │ │ [34mDEBUG[39m Unnecessary package: typing-extensions==4.15.0 (from file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_1756220668
+ │ │ /work)
+ │ │ [34mDEBUG[39m Unnecessary package: zipp==3.23.1 (from file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_zipp_1776131454/work)
+ │ │ [35mTRACE[39m Checking lock for `/root/.cache/uv/sdists-v9/editable/e146a652b9a99fea` at `/root/.cache/uv/sdists-v9/editable/e146a652b9a99fea/.lock`
+ │ │ [35mTRACE[39m Acquired exclusive lock for `/root/.cache/uv/sdists-v9/editable/e146a652b9a99fea`
+ │ │ [34mDEBUG[39m Computed cache info: Timestamp(SystemTime { tv_sec: 1778283965, tv_nsec: 615633172 }), None, None, {}, {"src": Some(Timestamp(Timestamp(SystemTime { 
+ │ │ tv_sec: 1778283965, tv_nsec: 615633172 })))}. Most recently modified: /pixi-build-with-scikit-build-core/pyproject.toml
+ │ │    [36m[1mBuilding[0m[39m rosen-cpp[2m @ file:///pixi-build-with-scikit-build-core[0m
+ │ │ [34mDEBUG[39m Building: rosen-cpp @ file:///pixi-build-with-scikit-build-core
+ │ │ [35mTRACE[39m Requirements for direct build not matched because `build_system.build-backend` is not `uv_build`, but `scikit_build_core.build`
+ │ │ [34mDEBUG[39m Assessing Python executable as base candidate: $PREFIX/bin/python
+ │ │ [34mDEBUG[39m Reusing existing build environment for: rosen-cpp @ file:///pixi-build-with-scikit-build-core
+ │ │ [34mDEBUG[39m No workspace root found, using project root
+ │ │ [34mDEBUG[39m Proceeding without build isolation
+ │ │ [34mDEBUG[39m Calling `scikit_build_core.build.build_editable("/root/.cache/uv/builds-v0/.tmpPmQ1P2", {}, None)`
+ │ │ [34mDEBUG[39m \x1b[32m*** \x1b[1mscikit-build-core 0.12.1\x1b[0m using \x1b[34mCMake 4.3.2\x1b[39m\x1b[0m \x1b[31m(editable)\x1b[0m
+ │ │ [34mDEBUG[39m \x1b[32m***\x1b[0m \x1b[1mConfiguring CMake...\x1b[0m
+ │ │ [34mDEBUG[39m 2026-05-08 23:46:40,688 - scikit_build_core - WARNING - Unsupported CMAKE_ARGS ignored: -DCMAKE_BUILD_TYPE=Release
+ │ │ [34mDEBUG[39m 2026-05-08 23:46:40,688 - scikit_build_core - WARNING - Unsupported CMAKE_ARGS ignored: -DCMAKE_INSTALL_PREFIX=$PREFIX
+ │ │ [34mDEBUG[39m 2026-05-08 23:46:40,689 - scikit_build_core - WARNING - Unsupported CMAKE_ARGS ignored: -DCMAKE_BUILD_TYPE=Release
+ │ │ [34mDEBUG[39m 2026-05-08 23:46:40,689 - scikit_build_core - WARNING - Unsupported CMAKE_ARGS ignored: -DCMAKE_INSTALL_PREFIX=$PREFIX
+ │ │ [34mDEBUG[39m loading initial cache file /tmp/tmpn9dfnt7i/build/CMakeInit.txt
+ │ │ [34mDEBUG[39m \x1b[0mCMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to
+ │ │  select a different build tool.\x1b[0m
+ │ │ [34mDEBUG[39m \x1b[0mCMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage\x1b[0m
+ │ │ [34mDEBUG[39m -- Configuring incomplete, errors occurred!
+ │ │ [34mDEBUG[39m \x1b[31m
+ │ │ [34mDEBUG[39m \x1b[1m***\x1b[0m \x1b[31mCMake configuration failed\x1b[0m
+ │ │ [35mTRACE[39m Released lock at `/root/.cache/uv/sdists-v9/editable/e146a652b9a99fea/.lock`
+ │ │   [31m×[0m Failed to build `rosen-cpp @ file:///pixi-build-with-scikit-build-core`
+ │ │ [31m  ├─▶ [0mThe build backend returned an error
+ │ │ [31m  ╰─▶ [0mCall to `scikit_build_core.build.build_editable` failed (exit status: 1)
+ │ │ [31m      [0m[31m[stdout][39m
+ │ │ [31m      [0m[32m*** [1mscikit-build-core 0.12.1[0m using [34mCMake 4.3.2[39m[0m [31m(editable)[0m
+ │ │ [31m      [0m[32m***[0m [1mConfiguring CMake...[0m
+ │ │ [31m      [0mloading initial cache file /tmp/tmpn9dfnt7i/build/CMakeInit.txt
+ │ │ [31m      [0m-- Configuring incomplete, errors occurred!
+ │ │ [31m      [0m[31m[stderr][39m
+ │ │ [31m      [0m2026-05-08 23:46:40,688 - scikit_build_core - WARNING - Unsupported
+ │ │ [31m      [0mCMAKE_ARGS ignored: -DCMAKE_BUILD_TYPE=Release
+ │ │ [31m      [0m2026-05-08 23:46:40,688 - scikit_build_core
+ │ │ [31m      [0m- WARNING - Unsupported CMAKE_ARGS ignored:
+ │ │ [31m      [0m-DCMAKE_INSTALL_PREFIX=$PREFIX
+ │ │ [31m      [0m2026-05-08 23:46:40,689 - scikit_build_core - WARNING - Unsupported
+ │ │ [31m      [0mCMAKE_ARGS ignored: -DCMAKE_BUILD_TYPE=Release
+ │ │ [31m      [0m2026-05-08 23:46:40,689 - scikit_build_core
+ │ │ [31m      [0m- WARNING - Unsupported CMAKE_ARGS ignored:
+ │ │ [31m      [0m-DCMAKE_INSTALL_PREFIX=$PREFIX
+ │ │ [31m      [0m[0mCMake Error: CMake was unable to find a build program corresponding to
+ │ │ [31m      [0m"Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to
+ │ │ [31m      [0mselect a different build tool.[0m
+ │ │ [31m      [0m[0mCMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage[0m
+ │ │ [31m      [0m[31m
+ │ │ [31m      [0m[1m***[0m [31mCMake configuration failed[0m
+ │ │ [31m      [0m[36m[1mhint[0m[39m[1m:[0m This usually indicates a problem with the package or the build
+ │ │ [31m      [0menvironment.
+ │ │ [35mTRACE[39m Released lock at `/tmp/uv-2c116a21c19dfc14.lock`
+ │ │ [35mTRACE[39m Released lock at `/root/.cache/uv/.lock`
+ │ │ × error Script failed with status 1
+ │ │ × error 
+ │ │ × error Script execution failed.
+ │ │ × error 
+ │ │ × error   Work directory: /pixi-build-with-scikit-build-core/.pixi/build/work/rosen-cpp-UdWkRD18ix8-g4NHiBxQw8I/work
+ │ │ × error   Prefix: /pixi-build-with-scikit-build-core/.pixi/build/work/rosen-cpp-UdWkRD18ix8-g4NHiBxQw8I/host_placehold_placehold_placehold_placehold_placeho
+ │ │ × error ld_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac
+ │ │ × error   Build prefix: /pixi-build-with-scikit-build-core/.pixi/build/work/rosen-cpp-UdWkRD18ix8-g4NHiBxQw8I/bld
+ │ │ × error 
+ │ │ × error To run the script manually, use the following command:
+ │ │ × error 
+ │ │ × error   cd "/pixi-build-with-scikit-build-core/.pixi/build/work/rosen-cpp-UdWkRD18ix8-g4NHiBxQw8I/work" && ./conda_build.sh
+ │ │ × error 
+ │ │ × error To run commands interactively in the build environment:
+ │ │ × error 
+ │ │ × error   cd "/pixi-build-with-scikit-build-core/.pixi/build/work/rosen-cpp-UdWkRD18ix8-g4NHiBxQw8I/work" && source build_env.sh
+ │ │
+ │ ╰─────────────────── (took 0 seconds)
+ │
+ ╰─────────────────── (took 0 seconds)
+Error:   × failed to build 'rosen-cpp' from '.'
+  ╰─▶   × Script failed to execute
+      
+

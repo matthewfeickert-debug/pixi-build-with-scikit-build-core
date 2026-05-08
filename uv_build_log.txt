@@ -1,0 +1,969 @@
+DEBUG Found workspace root: `/_debug/pixi-build-with-scikit-build-core`
+TRACE Discovering workspace members for: `/_debug/pixi-build-with-scikit-build-core`
+DEBUG Adding root workspace member: `/_debug/pixi-build-with-scikit-build-core`
+DEBUG Skipping `pyproject.toml` in `/_debug/pixi-build-with-scikit-build-core` (no `[tool.uv]` section)
+DEBUG Searching for user configuration in: `/root/.config/uv/uv.toml`
+DEBUG uv 0.11.11 (x86_64-unknown-linux-gnu)
+DEBUG Marking explicit source tree for reinstall: `/_debug/pixi-build-with-scikit-build-core`
+TRACE Checking lock for `/root/.cache/uv` at `/root/.cache/uv/.lock`
+TRACE Acquired shared lock for `/root/.cache/uv`
+DEBUG Searching for default Python interpreter in virtual environments
+DEBUG Failed to inspect Python interpreter from conda prefix at `/_debug/.pixi/envs/default/bin/python3` 
+TRACE Skipping missing interpreter at /_debug/.pixi/envs/default/bin/python3
+TRACE Querying interpreter executable at /_debug/.venv/bin/python3
+DEBUG Found `cpython-3.14.4-linux-x86_64-gnu` at `/_debug/.venv/bin/python3` (virtual environment)
+Using Python 3.14.4 environment at: /_debug/.venv
+TRACE Checking lock for `/_debug/.venv` at `/_debug/.venv/.lock`
+TRACE Acquired exclusive lock for `/_debug/.venv`
+DEBUG Using request connect timeout of 10s and read timeout of 30s
+DEBUG Found PEP 621 metadata for /_debug/pixi-build-with-scikit-build-core in `pyproject.toml` (rosen-cpp)
+TRACE Performing lookahead for rosen-cpp @ file:///_debug/pixi-build-with-scikit-build-core
+DEBUG Found static `pyproject.toml` for: rosen-cpp @ file:///_debug/pixi-build-with-scikit-build-core
+DEBUG No workspace root found, using project root
+DEBUG Solving with installed Python version: 3.14.4
+DEBUG Solving with target Python version: >=3.14.4
+TRACE Assigned packages: 
+TRACE Chose package for decision: root. remaining choices: 
+DEBUG Adding direct dependency: rosen-cpp*
+TRACE Assigned packages: root==0a0.dev0
+TRACE Chose package for decision: rosen-cpp. remaining choices: 
+DEBUG Searching for a compatible version of rosen-cpp @ file:///_debug/pixi-build-with-scikit-build-core (*)
+DEBUG Adding transitive dependency for rosen-cpp==0.1.0: scipy>=1.6.0
+DEBUG Adding transitive dependency for rosen-cpp==0.1.0: numpy*
+TRACE Assigned packages: root==0a0.dev0, rosen-cpp==0.1.0
+TRACE Chose package for decision: scipy. remaining choices: numpy
+TRACE Fetching metadata for scipy from https://pypi.org/simple/scipy/
+TRACE Fetching metadata for numpy from https://pypi.org/simple/numpy/
+TRACE No cache entry exists for /root/.cache/uv/simple-v21/pypi/scipy.rkyv
+DEBUG No cache entry for: https://pypi.org/simple/scipy/
+DEBUG Sending fresh GET request for: https://pypi.org/simple/scipy/
+TRACE Handling request for https://pypi.org/simple/scipy/ with authentication policy auto
+TRACE Request for https://pypi.org/simple/scipy/ is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://pypi.org/simple/scipy/
+TRACE Attempting unauthenticated request for https://pypi.org/simple/scipy/
+TRACE No cache entry exists for /root/.cache/uv/simple-v21/pypi/numpy.rkyv
+DEBUG No cache entry for: https://pypi.org/simple/numpy/
+DEBUG Sending fresh GET request for: https://pypi.org/simple/numpy/
+TRACE Handling request for https://pypi.org/simple/numpy/ with authentication policy auto
+TRACE Request for https://pypi.org/simple/numpy/ is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://pypi.org/simple/numpy/
+TRACE Attempting unauthenticated request for https://pypi.org/simple/numpy/
+TRACE Received response for fresh request with status 200 OK for: https://pypi.org/simple/scipy/
+TRACE Response from https://pypi.org/simple/scipy/ is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://pypi.org/simple/numpy/
+TRACE Response from https://pypi.org/simple/numpy/ is storable because it has a 'public' cache-control directive
+TRACE Received package metadata for: scipy
+TRACE Selecting candidate for scipy with range >=1.6.0 with 99 remote versions
+DEBUG Searching for a compatible version of scipy (>=1.6.0)
+TRACE Found candidate for package scipy with range >=1.6.0 after 1 steps: 1.17.1 version
+TRACE Selecting candidate for scipy with range >=1.6.0 with 99 remote versions
+TRACE Returning candidate for package scipy with range >=1.6.0 after 1 steps
+TRACE Found candidate for package scipy with range >=1.6.0 after 1 steps: 1.17.1 version
+TRACE Returning candidate for package scipy with range >=1.6.0 after 1 steps
+DEBUG Selecting: scipy==1.17.1 [compatible] (scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl)
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/scipy/1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.msgpack
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+TRACE Handling request for https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+DEBUG Skipping file for numpy: numpy-1.0.1.dev3460.win32-py2.4.exe
+DEBUG Skipping file for numpy: numpy-1.3.0.win32-py2.5.exe
+DEBUG Skipping file for numpy: numpy-1.5.0.win32-py2.6.exe
+DEBUG Skipping file for numpy: numpy-1.5.1.win32-py2.5-nosse.exe
+DEBUG Skipping file for numpy: numpy-1.5.1.win32-py2.6-nosse.exe
+DEBUG Skipping file for numpy: numpy-1.5.1.win32-py2.7-nosse.exe
+DEBUG Skipping file for numpy: numpy-1.5.1.win32-py3.1-nosse.exe
+DEBUG Skipping file for numpy: numpy-1.6.0.win32-py2.5.exe
+DEBUG Skipping file for numpy: numpy-1.6.0.win32-py2.6.exe
+DEBUG Skipping file for numpy: numpy-1.6.0.win32-py2.7.exe
+DEBUG Skipping file for numpy: numpy-1.6.0.win32-py3.1.exe
+DEBUG Skipping file for numpy: numpy-1.6.0.win32-py3.2.exe
+DEBUG Skipping file for numpy: numpy-1.6.1.win32-py2.5.exe
+DEBUG Skipping file for numpy: numpy-1.6.1.win32-py2.6.exe
+DEBUG Skipping file for numpy: numpy-1.6.1.win32-py2.7.exe
+DEBUG Skipping file for numpy: numpy-1.6.1.win32-py3.1.exe
+DEBUG Skipping file for numpy: numpy-1.6.1.win32-py3.2.exe
+DEBUG Skipping file for numpy: numpy-1.6.2.win32-py2.5.exe
+DEBUG Skipping file for numpy: numpy-1.6.2.win32-py2.6.exe
+DEBUG Skipping file for numpy: numpy-1.6.2.win32-py2.7.exe
+DEBUG Skipping file for numpy: numpy-1.6.2.win32-py3.1.exe
+DEBUG Skipping file for numpy: numpy-1.6.2.win32-py3.2.exe
+DEBUG Skipping file for numpy: numpy-1.7.0.win32-py2.5.exe
+DEBUG Skipping file for numpy: numpy-1.7.0.win32-py2.6.exe
+DEBUG Skipping file for numpy: numpy-1.7.0.win32-py2.7.exe
+DEBUG Skipping file for numpy: numpy-1.7.0.win32-py3.1.exe
+DEBUG Skipping file for numpy: numpy-1.7.0.win32-py3.2.exe
+DEBUG Skipping file for numpy: numpy-1.7.0.win32-py3.3.exe
+DEBUG Skipping file for numpy: numpy-1.7.1.win32-py2.5.exe
+DEBUG Skipping file for numpy: numpy-1.7.1.win32-py2.6.exe
+DEBUG Skipping file for numpy: numpy-1.7.1.win32-py2.7.exe
+DEBUG Skipping file for numpy: numpy-1.7.1.win32-py3.1.exe
+DEBUG Skipping file for numpy: numpy-1.7.1.win32-py3.2.exe
+DEBUG Skipping file for numpy: numpy-1.7.1.win32-py3.3.exe
+TRACE Received package metadata for: numpy
+TRACE Selecting candidate for numpy with range * with 130 remote versions
+TRACE Found candidate for package numpy with range * after 1 steps: 2.4.4 version
+TRACE Returning candidate for package numpy with range * after 1 steps
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/numpy/2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.msgpack
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+TRACE Handling request for https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+TRACE Response from https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+TRACE Response from https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata is storable because it has a 'public' cache-control directive
+TRACE Received built distribution metadata for: scipy==1.17.1
+TRACE Received built distribution metadata for: numpy==2.4.4
+DEBUG Adding transitive dependency for scipy==1.17.1: numpy>=1.26.4, <2.7
+TRACE Assigned packages: root==0a0.dev0, rosen-cpp==0.1.0, scipy==1.17.1
+TRACE Selecting candidate for numpy with range >=1.26.4, <2.7 with 130 remote versions
+TRACE Chose package for decision: numpy. remaining choices: 
+TRACE Found candidate for package numpy with range >=1.26.4, <2.7 after 1 steps: 2.4.4 version
+TRACE Returning candidate for package numpy with range >=1.26.4, <2.7 after 1 steps
+DEBUG Searching for a compatible version of numpy (>=1.26.4, <2.7)
+TRACE Selecting candidate for numpy with range >=1.26.4, <2.7 with 130 remote versions
+TRACE Found candidate for package numpy with range >=1.26.4, <2.7 after 1 steps: 2.4.4 version
+TRACE Returning candidate for package numpy with range >=1.26.4, <2.7 after 1 steps
+DEBUG Selecting: numpy==2.4.4 [compatible] (numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl)
+TRACE Assigned packages: root==0a0.dev0, rosen-cpp==0.1.0, scipy==1.17.1, numpy==2.4.4
+DEBUG Tried 3 versions: numpy 1, rosen-cpp 1, scipy 1
+DEBUG marker environment resolution took 0.521s
+TRACE Resolution: ResolverEnvironment { kind: Specific { marker_env: ResolverMarkerEnvironment(MarkerEnvironment { inner: MarkerEnvironmentInner { implementation_name: "cpython", implementation_version: StringVersion { string: "3.14.4", version: "3.14.4" }, os_name: "posix", platform_machine: "x86_64", platform_python_implementation: "CPython", platform_release: "6.8.0-79-generic", platform_system: "Linux", platform_version: "#79-Ubuntu SMP PREEMPT_DYNAMIC Tue Aug 12 14:42:46 UTC 2025", python_full_version: StringVersion { string: "3.14.4", version: "3.14.4" }, python_version: StringVersion { string: "3.14", version: "3.14" }, sys_platform: "linux" } }) } }
+TRACE Resolution edge: ROOT -> rosen-cpp
+TRACE Resolution edge:     0a0.dev0 -> 0.1.0
+TRACE Resolution edge: rosen-cpp -> scipy
+TRACE Resolution edge:     0.1.0 -> 1.17.1
+TRACE Resolution edge: rosen-cpp -> numpy
+TRACE Resolution edge:     0.1.0 -> 2.4.4
+TRACE Resolution edge: scipy -> numpy
+TRACE Resolution edge:     1.17.1 -> 2.4.4
+Resolved 3 packages in 523ms
+DEBUG Must revalidate requirement: rosen-cpp
+DEBUG Identified uncached distribution: scipy==1.17.1
+DEBUG Identified uncached distribution: numpy==2.4.4
+TRACE Checking lock for `/root/.cache/uv/sdists-v9/path/b8d1042d4873009d` at `/root/.cache/uv/sdists-v9/path/b8d1042d4873009d/.lock`
+TRACE Acquired exclusive lock for `/root/.cache/uv/sdists-v9/path/b8d1042d4873009d`
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1778283861, tv_nsec: 949999403 }), None, None, {}, {"src": Some(Timestamp(Timestamp(SystemTime { tv_sec: 1778283861, tv_nsec: 949999403 })))}. Most recently modified: pyproject.toml
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/scipy/1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.http
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+TRACE Handling request for https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/numpy/2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.http
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+TRACE Handling request for https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+   Building rosen-cpp @ file:///_debug/pixi-build-with-scikit-build-core
+DEBUG Building: rosen-cpp @ file:///_debug/pixi-build-with-scikit-build-core
+TRACE Requirements for direct build not matched because `build_system.build-backend` is not `uv_build`, but `scikit_build_core.build`
+DEBUG Assessing Python executable as base candidate: /root/.local/share/uv/python/cpython-3.14-linux-x86_64-gnu/bin/python3.14
+DEBUG Reusing existing build environment for: rosen-cpp @ file:///_debug/pixi-build-with-scikit-build-core
+DEBUG No workspace root found, using project root
+DEBUG Assessing Python executable as base candidate: /root/.local/share/uv/python/cpython-3.14-linux-x86_64-gnu/bin/python3.14
+DEBUG Using base executable for virtual environment: /root/.local/share/uv/python/cpython-3.14-linux-x86_64-gnu/bin/python3.14
+TRACE Using empty directory at `/root/.cache/uv/builds-v0/.tmpfEFdXG` for virtual environment
+DEBUG Resolving build requirements
+DEBUG Solving with installed Python version: 3.14.4
+DEBUG Solving with target Python version: >=3.14.4
+TRACE Assigned packages: 
+TRACE Chose package for decision: root. remaining choices: 
+DEBUG Adding direct dependency: scikit-build-core>=0.5.0
+DEBUG Adding direct dependency: pybind11>=2.10.0
+TRACE Assigned packages: root==0a0.dev0
+TRACE Fetching metadata for scikit-build-core from https://pypi.org/simple/scikit-build-core/
+TRACE Chose package for decision: scikit-build-core. remaining choices: pybind11
+TRACE Fetching metadata for pybind11 from https://pypi.org/simple/pybind11/
+TRACE No cache entry exists for /root/.cache/uv/simple-v21/pypi/scikit-build-core.rkyv
+DEBUG No cache entry for: https://pypi.org/simple/scikit-build-core/
+DEBUG Sending fresh GET request for: https://pypi.org/simple/scikit-build-core/
+TRACE Handling request for https://pypi.org/simple/scikit-build-core/ with authentication policy auto
+TRACE Request for https://pypi.org/simple/scikit-build-core/ is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://pypi.org/simple/scikit-build-core/
+TRACE Attempting unauthenticated request for https://pypi.org/simple/scikit-build-core/
+TRACE No cache entry exists for /root/.cache/uv/simple-v21/pypi/pybind11.rkyv
+DEBUG No cache entry for: https://pypi.org/simple/pybind11/
+DEBUG Sending fresh GET request for: https://pypi.org/simple/pybind11/
+TRACE Handling request for https://pypi.org/simple/pybind11/ with authentication policy auto
+TRACE Request for https://pypi.org/simple/pybind11/ is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://pypi.org/simple/pybind11/
+TRACE Attempting unauthenticated request for https://pypi.org/simple/pybind11/
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+TRACE Response from https://files.pythonhosted.org/packages/0b/2e/7eea398450457ecb54e18e9d10110993fa65561c4f3add5e8eccd2b9cd41/scipy-1.17.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl is storable because it has a 'public' cache-control directive
+Downloading scipy (33.6MiB)
+TRACE Received response for fresh request with status 200 OK for: https://pypi.org/simple/scikit-build-core/
+TRACE Response from https://pypi.org/simple/scikit-build-core/ is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://pypi.org/simple/pybind11/
+TRACE Response from https://pypi.org/simple/pybind11/ is storable because it has a 'public' cache-control directive
+TRACE Received package metadata for: pybind11
+TRACE Received package metadata for: scikit-build-core
+TRACE Selecting candidate for pybind11 with range >=2.10.0 with 66 remote versions
+TRACE Found candidate for package pybind11 with range >=2.10.0 after 1 steps: 3.0.4 version
+DEBUG Searching for a compatible version of scikit-build-core (>=0.5.0)
+TRACE Returning candidate for package pybind11 with range >=2.10.0 after 1 steps
+TRACE Selecting candidate for scikit-build-core with range >=0.5.0 with 68 remote versions
+TRACE Found candidate for package scikit-build-core with range >=0.5.0 after 1 steps: 0.12.2 version
+TRACE Returning candidate for package scikit-build-core with range >=0.5.0 after 1 steps
+DEBUG Selecting: scikit-build-core==0.12.2 [compatible] (scikit_build_core-0.12.2-py3-none-any.whl)
+TRACE Selecting candidate for scikit-build-core with range >=0.5.0 with 68 remote versions
+TRACE Found candidate for package scikit-build-core with range >=0.5.0 after 1 steps: 0.12.2 version
+TRACE Returning candidate for package scikit-build-core with range >=0.5.0 after 1 steps
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/pybind11/3.0.4-py3-none-any.msgpack
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl.metadata
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl.metadata
+TRACE Handling request for https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl.metadata with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl.metadata is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl.metadata
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl.metadata
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/scikit-build-core/0.12.2-py3-none-any.msgpack
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl.metadata
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl.metadata
+TRACE Handling request for https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl.metadata with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl.metadata is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl.metadata
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl.metadata
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+TRACE Response from https://files.pythonhosted.org/packages/98/7c/21252050676612625449b4807d6b695b9ce8a7c9e1c197ee6216c8a65c7c/numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl is storable because it has a 'public' cache-control directive
+Downloading numpy (15.9MiB)
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl.metadata
+TRACE Response from https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl.metadata is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl.metadata
+TRACE Response from https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl.metadata is storable because it has a 'public' cache-control directive
+TRACE Received built distribution metadata for: pybind11==3.0.4
+TRACE Received built distribution metadata for: scikit-build-core==0.12.2
+DEBUG Adding transitive dependency for scikit-build-core==0.12.2: packaging>=23.2
+DEBUG Adding transitive dependency for scikit-build-core==0.12.2: pathspec>=0.12.0
+TRACE Assigned packages: root==0a0.dev0, scikit-build-core==0.12.2
+TRACE Chose package for decision: pybind11. remaining choices: pathspec, packaging
+DEBUG Searching for a compatible version of pybind11 (>=2.10.0)
+TRACE Selecting candidate for pybind11 with range >=2.10.0 with 66 remote versions
+TRACE Found candidate for package pybind11 with range >=2.10.0 after 1 steps: 3.0.4 version
+TRACE Returning candidate for package pybind11 with range >=2.10.0 after 1 steps
+DEBUG Selecting: pybind11==3.0.4 [compatible] (pybind11-3.0.4-py3-none-any.whl)
+TRACE Fetching metadata for packaging from https://pypi.org/simple/packaging/
+TRACE Assigned packages: root==0a0.dev0, scikit-build-core==0.12.2, pybind11==3.0.4
+TRACE Chose package for decision: packaging. remaining choices: pathspec
+TRACE Fetching metadata for pathspec from https://pypi.org/simple/pathspec/
+TRACE No cache entry exists for /root/.cache/uv/simple-v21/pypi/packaging.rkyv
+DEBUG No cache entry for: https://pypi.org/simple/packaging/
+DEBUG Sending fresh GET request for: https://pypi.org/simple/packaging/
+TRACE Handling request for https://pypi.org/simple/packaging/ with authentication policy auto
+TRACE Request for https://pypi.org/simple/packaging/ is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://pypi.org/simple/packaging/
+TRACE Attempting unauthenticated request for https://pypi.org/simple/packaging/
+TRACE No cache entry exists for /root/.cache/uv/simple-v21/pypi/pathspec.rkyv
+DEBUG No cache entry for: https://pypi.org/simple/pathspec/
+DEBUG Sending fresh GET request for: https://pypi.org/simple/pathspec/
+TRACE Handling request for https://pypi.org/simple/pathspec/ with authentication policy auto
+TRACE Request for https://pypi.org/simple/pathspec/ is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://pypi.org/simple/pathspec/
+TRACE Attempting unauthenticated request for https://pypi.org/simple/pathspec/
+TRACE Received response for fresh request with status 200 OK for: https://pypi.org/simple/packaging/
+TRACE Response from https://pypi.org/simple/packaging/ is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://pypi.org/simple/pathspec/
+TRACE Response from https://pypi.org/simple/pathspec/ is storable because it has a 'public' cache-control directive
+TRACE Received package metadata for: packaging
+TRACE Selecting candidate for packaging with range >=23.2 with 53 remote versions
+DEBUG Searching for a compatible version of packaging (>=23.2)
+TRACE Selecting candidate for packaging with range >=23.2 with 53 remote versions
+TRACE Found candidate for package packaging with range >=23.2 after 1 steps: 26.2 version
+TRACE Returning candidate for package packaging with range >=23.2 after 1 steps
+TRACE Found candidate for package packaging with range >=23.2 after 1 steps: 26.2 version
+TRACE Returning candidate for package packaging with range >=23.2 after 1 steps
+DEBUG Selecting: packaging==26.2 [compatible] (packaging-26.2-py3-none-any.whl)
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/packaging/26.2-py3-none-any.msgpack
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl.metadata
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl.metadata
+TRACE Handling request for https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl.metadata with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl.metadata is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl.metadata
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl.metadata
+TRACE Received package metadata for: pathspec
+TRACE Selecting candidate for pathspec with range >=0.12.0 with 38 remote versions
+TRACE Found candidate for package pathspec with range >=0.12.0 after 1 steps: 1.1.1 version
+TRACE Returning candidate for package pathspec with range >=0.12.0 after 1 steps
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/pathspec/1.1.1-py3-none-any.msgpack
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl.metadata
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl.metadata
+TRACE Handling request for https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl.metadata with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl.metadata is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl.metadata
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl.metadata
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl.metadata
+TRACE Response from https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl.metadata is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl.metadata
+TRACE Response from https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl.metadata is storable because it has a 'public' cache-control directive
+TRACE Received built distribution metadata for: packaging==26.2
+TRACE Assigned packages: root==0a0.dev0, scikit-build-core==0.12.2, pybind11==3.0.4, packaging==26.2
+TRACE Chose package for decision: pathspec. remaining choices: 
+TRACE Received built distribution metadata for: pathspec==1.1.1
+DEBUG Searching for a compatible version of pathspec (>=0.12.0)
+TRACE Selecting candidate for pathspec with range >=0.12.0 with 38 remote versions
+TRACE Found candidate for package pathspec with range >=0.12.0 after 1 steps: 1.1.1 version
+TRACE Returning candidate for package pathspec with range >=0.12.0 after 1 steps
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+TRACE Assigned packages: root==0a0.dev0, scikit-build-core==0.12.2, pybind11==3.0.4, packaging==26.2, pathspec==1.1.1
+DEBUG Tried 4 versions: packaging 1, pathspec 1, pybind11 1, scikit-build-core 1
+DEBUG marker environment resolution took 0.219s
+TRACE Resolution: ResolverEnvironment { kind: Specific { marker_env: ResolverMarkerEnvironment(MarkerEnvironment { inner: MarkerEnvironmentInner { implementation_name: "cpython", implementation_version: StringVersion { string: "3.14.4", version: "3.14.4" }, os_name: "posix", platform_machine: "x86_64", platform_python_implementation: "CPython", platform_release: "6.8.0-79-generic", platform_system: "Linux", platform_version: "#79-Ubuntu SMP PREEMPT_DYNAMIC Tue Aug 12 14:42:46 UTC 2025", python_full_version: StringVersion { string: "3.14.4", version: "3.14.4" }, python_version: StringVersion { string: "3.14", version: "3.14" }, sys_platform: "linux" } }) } }
+TRACE Resolution edge: ROOT -> scikit-build-core
+TRACE Resolution edge:     0a0.dev0 -> 0.12.2
+TRACE Resolution edge: ROOT -> pybind11
+TRACE Resolution edge:     0a0.dev0 -> 3.0.4
+TRACE Resolution edge: scikit-build-core -> packaging
+TRACE Resolution edge:     0.12.2 -> 26.2
+TRACE Resolution edge: scikit-build-core -> pathspec
+TRACE Resolution edge:     0.12.2 -> 1.1.1
+DEBUG Installing in scikit-build-core==0.12.2, packaging==26.2, pybind11==3.0.4, pathspec==1.1.1 in /root/.cache/uv/builds-v0/.tmpfEFdXG
+DEBUG Identified uncached distribution: scikit-build-core==0.12.2
+DEBUG Identified uncached distribution: packaging==26.2
+DEBUG Identified uncached distribution: pybind11==3.0.4
+DEBUG Identified uncached distribution: pathspec==1.1.1
+DEBUG Downloading and building requirements for build: scikit-build-core==0.12.2, packaging==26.2, pybind11==3.0.4, pathspec==1.1.1
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/pybind11/3.0.4-py3-none-any.http
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl
+TRACE Handling request for https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/scikit-build-core/0.12.2-py3-none-any.http
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl
+TRACE Handling request for https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/pathspec/1.1.1-py3-none-any.http
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl
+TRACE Handling request for https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/packaging/26.2-py3-none-any.http
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl
+TRACE Handling request for https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl
+TRACE Response from https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl
+TRACE Response from https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl
+TRACE Response from https://files.pythonhosted.org/packages/b3/06/c3a23c9a0263b136c519f033a58d4641e73065fefc7754e9667ec206d992/pybind11-3.0.4-py3-none-any.whl is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl
+TRACE Response from https://files.pythonhosted.org/packages/07/49/b2f0fbe3165d55c02e7f9eec6a10685d518af0ef6e919ff2f589c2d15c85/scikit_build_core-0.12.2-py3-none-any.whl is storable because it has a 'public' cache-control directive
+DEBUG Installing build requirements: pathspec==1.1.1, packaging==26.2, scikit-build-core==0.12.2, pybind11==3.0.4
+TRACE Extracting file name=PackageName("pathspec")
+TRACE Extracting file name=PackageName("scikit-build-core")
+TRACE Extracting file name=PackageName("packaging")
+TRACE Extracting file name=PackageName("pybind11")
+DEBUG Failed to reflink `/root/.cache/uv/archive-v0/Tj9JJdhwicjnkB3U/packaging-26.2.dist-info/licenses/LICENSE.APACHE` to `/root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/packaging-26.2.dist-info/licenses/LICENSE.APACHE`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `/root/.cache/uv/archive-v0/J7CPk0YcPvA83ShE/pathspec-1.1.1.dist-info/licenses/LICENSE` to `/root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/pathspec-1.1.1.dist-info/licenses/LICENSE`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `/root/.cache/uv/archive-v0/r3f6xq4mgrAoFb-X/pybind11-3.0.4.dist-info/licenses/LICENSE` to `/root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/pybind11-3.0.4.dist-info/licenses/LICENSE`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `/root/.cache/uv/archive-v0/cQCAKcm00H_jR3yW/scikit_build_core/metadata/fancy_pypi_readme.py` to `/root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/scikit_build_core/metadata/fancy_pypi_readme.py`: Operation not supported (os error 95), falling back
+TRACE Extracted 27 files name=PackageName("packaging")
+TRACE No entrypoints name=PackageName("packaging")
+TRACE No data name=PackageName("packaging")
+TRACE Writing installer metadata name=PackageName("packaging")
+TRACE Writing record name=PackageName("packaging")
+TRACE Extracted 36 files name=PackageName("pathspec")
+TRACE No entrypoints name=PackageName("pathspec")
+TRACE No data name=PackageName("pathspec")
+TRACE Writing installer metadata name=PackageName("pathspec")
+TRACE Writing record name=PackageName("pathspec")
+TRACE Extracted 76 files name=PackageName("pybind11")
+TRACE Extracted 102 files name=PackageName("scikit-build-core")
+TRACE No entrypoints name=PackageName("scikit-build-core")
+TRACE No data name=PackageName("scikit-build-core")
+TRACE Writing installer metadata name=PackageName("scikit-build-core")
+TRACE Writing record name=PackageName("scikit-build-core")
+TRACE Writing entrypoints name=PackageName("pybind11")
+TRACE No data name=PackageName("pybind11")
+TRACE Writing installer metadata name=PackageName("pybind11")
+TRACE Writing record name=PackageName("pybind11")
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `scikit_build_core.build.get_requires_for_build_wheel()`
+DEBUG No workspace root found, using project root
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.14.4
+DEBUG Solving with target Python version: >=3.14.4
+TRACE Assigned packages: 
+TRACE Chose package for decision: root. remaining choices: 
+DEBUG Adding direct dependency: scikit-build-core>=0.5.0
+DEBUG Adding direct dependency: pybind11>=2.10.0
+DEBUG Adding direct dependency: setuptools-scm*
+TRACE Assigned packages: root==0a0.dev0
+TRACE Chose package for decision: scikit-build-core. remaining choices: setuptools-scm, pybind11
+DEBUG Searching for a compatible version of scikit-build-core (>=0.5.0)
+TRACE Selecting candidate for scikit-build-core with range >=0.5.0 with 68 remote versions
+TRACE Found candidate for package scikit-build-core with range >=0.5.0 after 1 steps: 0.12.2 version
+TRACE Returning candidate for package scikit-build-core with range >=0.5.0 after 1 steps
+DEBUG Selecting: scikit-build-core==0.12.2 [compatible] (scikit_build_core-0.12.2-py3-none-any.whl)
+DEBUG Adding transitive dependency for scikit-build-core==0.12.2: packaging>=23.2
+DEBUG Adding transitive dependency for scikit-build-core==0.12.2: pathspec>=0.12.0
+TRACE Assigned packages: root==0a0.dev0, scikit-build-core==0.12.2
+TRACE Chose package for decision: pybind11. remaining choices: setuptools-scm, pathspec, packaging
+DEBUG Searching for a compatible version of pybind11 (>=2.10.0)
+TRACE Fetching metadata for setuptools-scm from https://pypi.org/simple/setuptools-scm/
+TRACE Selecting candidate for pybind11 with range >=2.10.0 with 66 remote versions
+TRACE Found candidate for package pybind11 with range >=2.10.0 after 1 steps: 3.0.4 version
+TRACE Returning candidate for package pybind11 with range >=2.10.0 after 1 steps
+DEBUG Selecting: pybind11==3.0.4 [compatible] (pybind11-3.0.4-py3-none-any.whl)
+TRACE Assigned packages: root==0a0.dev0, scikit-build-core==0.12.2, pybind11==3.0.4
+TRACE Chose package for decision: setuptools-scm. remaining choices: packaging, pathspec
+TRACE Selecting candidate for pybind11 with range >=2.10.0 with 66 remote versions
+TRACE Found candidate for package pybind11 with range >=2.10.0 after 1 steps: 3.0.4 version
+TRACE Returning candidate for package pybind11 with range >=2.10.0 after 1 steps
+TRACE Selecting candidate for scikit-build-core with range >=0.5.0 with 68 remote versions
+TRACE Found candidate for package scikit-build-core with range >=0.5.0 after 1 steps: 0.12.2 version
+TRACE Returning candidate for package scikit-build-core with range >=0.5.0 after 1 steps
+TRACE Selecting candidate for pathspec with range >=0.12.0 with 38 remote versions
+TRACE Found candidate for package pathspec with range >=0.12.0 after 1 steps: 1.1.1 version
+TRACE Returning candidate for package pathspec with range >=0.12.0 after 1 steps
+TRACE Selecting candidate for packaging with range >=23.2 with 53 remote versions
+TRACE Found candidate for package packaging with range >=23.2 after 1 steps: 26.2 version
+TRACE Returning candidate for package packaging with range >=23.2 after 1 steps
+TRACE No cache entry exists for /root/.cache/uv/simple-v21/pypi/setuptools-scm.rkyv
+DEBUG No cache entry for: https://pypi.org/simple/setuptools-scm/
+DEBUG Sending fresh GET request for: https://pypi.org/simple/setuptools-scm/
+TRACE Handling request for https://pypi.org/simple/setuptools-scm/ with authentication policy auto
+TRACE Request for https://pypi.org/simple/setuptools-scm/ is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://pypi.org/simple/setuptools-scm/
+TRACE Attempting unauthenticated request for https://pypi.org/simple/setuptools-scm/
+TRACE Received response for fresh request with status 200 OK for: https://pypi.org/simple/setuptools-scm/
+TRACE Response from https://pypi.org/simple/setuptools-scm/ is storable because it has a 'public' cache-control directive
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.14.0-py2.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.14.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.14.0-py3.3.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.14.0-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.14.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.14.0rc1-py2.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.14.0rc1-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.14.0rc1-py3.3.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.14.0rc1-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.14.0rc1-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.0-py2.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.0-py3.3.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.0-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.0rc1-py2.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.0rc1-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.0rc1-py3.3.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.0rc1-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.0rc1-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.1rc1-py2.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.1rc1-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.1rc1-py3.3.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.1rc1-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.1rc1-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.1rc1-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.4-py2.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.4-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.4-py3.3.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.4-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.4-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.4-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.5-py2.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.5-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.5-py3.3.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.5-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.5-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.5-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.6-py2.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.6-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.6-py3.3.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.6-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.6-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.6-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.7-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.7-py3.3.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.7-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.7-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.15.7-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.0-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.1-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.1-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.1-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.1-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.2-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.2-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.2-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.16.2-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.17.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.17.0-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.17.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-1.17.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-2.0.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-2.0.0-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-2.0.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-2.0.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-2.1.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-2.1.0-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-2.1.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-2.1.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.0-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.1-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.1-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.1-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.1-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.2-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.2-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.2-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.2-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.4-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.4-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.4-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.4-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.5-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.5-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.5-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.5-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.6-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.6-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.6-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.0.6-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.1.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.1.0-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.1.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.1.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.2.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.2.0-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.2.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.2.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.1-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.1-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.1-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.1-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.2-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.2-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.2-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.2-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.3-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.3-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.3-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.3-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.3-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.3.3-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.0-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.0-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.0-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.1-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.1-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.1-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.1-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.1-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.1-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.2-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.2-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.2-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.2-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.2-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.2-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.3-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.3-py3.4.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.3-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.3-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.3-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.4.3-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.5.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.5.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.5.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.5.0-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-3.5.0-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.0.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.0.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.0.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.0.0-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.0.0-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.0-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.0-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.0-py3.9.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.1-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.1-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.1-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.1-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.1-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.1-py3.9.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.2-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.2-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.2-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.2-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.2-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-4.1.2-py3.9.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.0-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.0-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.0-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.0-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.0-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.0-py3.9.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.1-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.1-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.1-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.1-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.1-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.1-py3.9.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.2-py2.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.2-py3.5.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.2-py3.6.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.2-py3.7.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.2-py3.8.egg
+DEBUG Skipping file for setuptools-scm: setuptools_scm-5.0.2-py3.9.egg
+TRACE Received package metadata for: setuptools-scm
+TRACE Selecting candidate for setuptools-scm with range * with 102 remote versions
+TRACE Found candidate for package setuptools-scm with range * after 1 steps: 10.0.5 version
+TRACE Returning candidate for package setuptools-scm with range * after 1 steps
+DEBUG Searching for a compatible version of setuptools-scm (*)
+TRACE Selecting candidate for setuptools-scm with range * with 102 remote versions
+TRACE Found candidate for package setuptools-scm with range * after 1 steps: 10.0.5 version
+TRACE Returning candidate for package setuptools-scm with range * after 1 steps
+DEBUG Selecting: setuptools-scm==10.0.5 [compatible] (setuptools_scm-10.0.5-py3-none-any.whl)
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/setuptools-scm/10.0.5-py3-none-any.msgpack
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl.metadata
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl.metadata
+TRACE Handling request for https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl.metadata with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl.metadata is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl.metadata
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl.metadata
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl.metadata
+TRACE Response from https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl.metadata is storable because it has a 'public' cache-control directive
+TRACE Received built distribution metadata for: setuptools-scm==10.0.5
+DEBUG Adding transitive dependency for setuptools-scm==10.0.5: vcs-versioning>=1.0.0.dev0
+DEBUG Adding transitive dependency for setuptools-scm==10.0.5: packaging>=20
+DEBUG Adding transitive dependency for setuptools-scm==10.0.5: setuptools*
+TRACE Fetching metadata for vcs-versioning from https://pypi.org/simple/vcs-versioning/
+TRACE Fetching metadata for setuptools from https://pypi.org/simple/setuptools/
+TRACE Assigned packages: root==0a0.dev0, scikit-build-core==0.12.2, pybind11==3.0.4, setuptools-scm==10.0.5
+TRACE Chose package for decision: packaging. remaining choices: setuptools, pathspec, vcs-versioning
+DEBUG Searching for a compatible version of packaging (>=23.2)
+TRACE Selecting candidate for packaging with range >=23.2 with 53 remote versions
+TRACE Found candidate for package packaging with range >=23.2 after 1 steps: 26.2 version
+TRACE Returning candidate for package packaging with range >=23.2 after 1 steps
+DEBUG Selecting: packaging==26.2 [compatible] (packaging-26.2-py3-none-any.whl)
+TRACE No cache entry exists for /root/.cache/uv/simple-v21/pypi/vcs-versioning.rkyv
+DEBUG No cache entry for: https://pypi.org/simple/vcs-versioning/
+DEBUG Sending fresh GET request for: https://pypi.org/simple/vcs-versioning/
+TRACE Assigned packages: root==0a0.dev0, scikit-build-core==0.12.2, pybind11==3.0.4, setuptools-scm==10.0.5, packaging==26.2
+TRACE Handling request for https://pypi.org/simple/vcs-versioning/ with authentication policy auto
+TRACE Request for https://pypi.org/simple/vcs-versioning/ is unauthenticated, checking cache
+TRACE Chose package for decision: pathspec. remaining choices: setuptools, vcs-versioning
+TRACE No credentials in cache for URL https://pypi.org/simple/vcs-versioning/
+TRACE Attempting unauthenticated request for https://pypi.org/simple/vcs-versioning/
+DEBUG Searching for a compatible version of pathspec (>=0.12.0)
+TRACE Selecting candidate for pathspec with range >=0.12.0 with 38 remote versions
+TRACE Found candidate for package pathspec with range >=0.12.0 after 1 steps: 1.1.1 version
+TRACE Returning candidate for package pathspec with range >=0.12.0 after 1 steps
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+TRACE No cache entry exists for /root/.cache/uv/simple-v21/pypi/setuptools.rkyv
+DEBUG No cache entry for: https://pypi.org/simple/setuptools/
+DEBUG Sending fresh GET request for: https://pypi.org/simple/setuptools/
+TRACE Assigned packages: root==0a0.dev0, scikit-build-core==0.12.2, pybind11==3.0.4, setuptools-scm==10.0.5, packaging==26.2, pathspec==1.1.1
+TRACE Handling request for https://pypi.org/simple/setuptools/ with authentication policy auto
+TRACE Request for https://pypi.org/simple/setuptools/ is unauthenticated, checking cache
+TRACE Chose package for decision: vcs-versioning. remaining choices: setuptools
+TRACE No credentials in cache for URL https://pypi.org/simple/setuptools/
+TRACE Attempting unauthenticated request for https://pypi.org/simple/setuptools/
+TRACE Received response for fresh request with status 200 OK for: https://pypi.org/simple/setuptools/
+TRACE Response from https://pypi.org/simple/setuptools/ is storable because it has a 'public' cache-control directive
+DEBUG Skipping file for setuptools: setuptools-0.6b1-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6b1-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6b2-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6b2-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6b3-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6b3-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6b4-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6b4-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c1-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c1-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c10-1.src.rpm
+DEBUG Skipping file for setuptools: setuptools-0.6c10-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c10-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c10-py2.5.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c10-py2.6.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c10.win32-py2.3.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c10.win32-py2.4.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c10.win32-py2.5.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c10.win32-py2.6.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c11-1.src.rpm
+DEBUG Skipping file for setuptools: setuptools-0.6c11-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c11-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c11-py2.5.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c11-py2.6.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c11-py2.7.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c11.win32-py2.3.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c11.win32-py2.4.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c11.win32-py2.5.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c11.win32-py2.6.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c11.win32-py2.7.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c2-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c2-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c3-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c3-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c3-py2.5.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c4-1.src.rpm
+DEBUG Skipping file for setuptools: setuptools-0.6c4-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c4-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c4-py2.5.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c4.win32-py2.3.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c4.win32-py2.4.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c4.win32-py2.5.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c5-1.src.rpm
+DEBUG Skipping file for setuptools: setuptools-0.6c5-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c5-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c5-py2.5.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c5.win32-py2.3.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c5.win32-py2.4.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c5.win32-py2.5.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c6-1.src.rpm
+DEBUG Skipping file for setuptools: setuptools-0.6c6-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c6-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c6-py2.5.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c6.win32-py2.3.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c6.win32-py2.4.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c6.win32-py2.5.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c7-1.src.rpm
+DEBUG Skipping file for setuptools: setuptools-0.6c7-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c7-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c7-py2.5.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c7.win32-py2.3.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c7.win32-py2.4.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c7.win32-py2.5.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c8-1.src.rpm
+DEBUG Skipping file for setuptools: setuptools-0.6c8-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c8-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c8-py2.5.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c8.win32-py2.3.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c8.win32-py2.4.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c8.win32-py2.5.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c9-1.src.rpm
+DEBUG Skipping file for setuptools: setuptools-0.6c9-py2.3.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c9-py2.4.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c9-py2.5.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c9-py2.6.egg
+DEBUG Skipping file for setuptools: setuptools-0.6c9.win32-py2.3.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c9.win32-py2.4.exe
+DEBUG Skipping file for setuptools: setuptools-0.6c9.win32-py2.5.exe
+DEBUG Skipping file for setuptools: setuptools-18.3.1-py3.4.egg
+TRACE Received response for fresh request with status 200 OK for: https://pypi.org/simple/vcs-versioning/
+TRACE Response from https://pypi.org/simple/vcs-versioning/ is storable because it has a 'public' cache-control directive
+TRACE Received package metadata for: vcs-versioning
+TRACE Selecting candidate for vcs-versioning with range >=1.0.0.dev0 with 4 remote versions
+TRACE Found candidate for package vcs-versioning with range >=1.0.0.dev0 after 1 steps: 1.1.1 version
+TRACE Returning candidate for package vcs-versioning with range >=1.0.0.dev0 after 1 steps
+DEBUG Searching for a compatible version of vcs-versioning (>=1.0.0.dev0)
+TRACE Selecting candidate for vcs-versioning with range >=1.0.0.dev0 with 4 remote versions
+TRACE Found candidate for package vcs-versioning with range >=1.0.0.dev0 after 1 steps: 1.1.1 version
+TRACE Returning candidate for package vcs-versioning with range >=1.0.0.dev0 after 1 steps
+DEBUG Selecting: vcs-versioning==1.1.1 [compatible] (vcs_versioning-1.1.1-py3-none-any.whl)
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/vcs-versioning/1.1.1-py3-none-any.msgpack
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl.metadata
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl.metadata
+TRACE Handling request for https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl.metadata with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl.metadata is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl.metadata
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl.metadata
+TRACE Received package metadata for: setuptools
+TRACE Selecting candidate for setuptools with range * with 622 remote versions
+TRACE Found candidate for package setuptools with range * after 1 steps: 82.0.1 version
+TRACE Returning candidate for package setuptools with range * after 1 steps
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/setuptools/82.0.1-py3-none-any.msgpack
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl.metadata
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl.metadata
+TRACE Handling request for https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl.metadata with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl.metadata is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl.metadata
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl.metadata
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl.metadata
+TRACE Response from https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl.metadata is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl.metadata
+TRACE Response from https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl.metadata is storable because it has a 'public' cache-control directive
+TRACE Received built distribution metadata for: vcs-versioning==1.1.1
+DEBUG Adding transitive dependency for vcs-versioning==1.1.1: packaging>=20
+TRACE Received built distribution metadata for: setuptools==82.0.1
+TRACE Assigned packages: root==0a0.dev0, scikit-build-core==0.12.2, pybind11==3.0.4, setuptools-scm==10.0.5, packaging==26.2, pathspec==1.1.1, vcs-versioning==1.1.1
+TRACE Chose package for decision: setuptools. remaining choices: 
+DEBUG Searching for a compatible version of setuptools (*)
+TRACE Selecting candidate for setuptools with range * with 622 remote versions
+TRACE Found candidate for package setuptools with range * after 1 steps: 82.0.1 version
+TRACE Returning candidate for package setuptools with range * after 1 steps
+DEBUG Selecting: setuptools==82.0.1 [compatible] (setuptools-82.0.1-py3-none-any.whl)
+TRACE Assigned packages: root==0a0.dev0, scikit-build-core==0.12.2, pybind11==3.0.4, setuptools-scm==10.0.5, packaging==26.2, pathspec==1.1.1, vcs-versioning==1.1.1, setuptools==82.0.1
+DEBUG Tried 7 versions: packaging 1, pathspec 1, pybind11 1, scikit-build-core 1, setuptools 1, setuptools-scm 1, vcs-versioning 1
+DEBUG marker environment resolution took 0.653s
+TRACE Resolution: ResolverEnvironment { kind: Specific { marker_env: ResolverMarkerEnvironment(MarkerEnvironment { inner: MarkerEnvironmentInner { implementation_name: "cpython", implementation_version: StringVersion { string: "3.14.4", version: "3.14.4" }, os_name: "posix", platform_machine: "x86_64", platform_python_implementation: "CPython", platform_release: "6.8.0-79-generic", platform_system: "Linux", platform_version: "#79-Ubuntu SMP PREEMPT_DYNAMIC Tue Aug 12 14:42:46 UTC 2025", python_full_version: StringVersion { string: "3.14.4", version: "3.14.4" }, python_version: StringVersion { string: "3.14", version: "3.14" }, sys_platform: "linux" } }) } }
+TRACE Resolution edge: ROOT -> scikit-build-core
+TRACE Resolution edge:     0a0.dev0 -> 0.12.2
+TRACE Resolution edge: ROOT -> pybind11
+TRACE Resolution edge:     0a0.dev0 -> 3.0.4
+TRACE Resolution edge: ROOT -> setuptools-scm
+TRACE Resolution edge:     0a0.dev0 -> 10.0.5
+TRACE Resolution edge: setuptools-scm -> vcs-versioning
+TRACE Resolution edge:     10.0.5 -> 1.1.1
+TRACE Resolution edge: setuptools-scm -> packaging
+TRACE Resolution edge:     10.0.5 -> 26.2
+TRACE Resolution edge: setuptools-scm -> setuptools
+TRACE Resolution edge:     10.0.5 -> 82.0.1
+TRACE Resolution edge: vcs-versioning -> packaging
+TRACE Resolution edge:     1.1.1 -> 26.2
+TRACE Resolution edge: scikit-build-core -> packaging
+TRACE Resolution edge:     0.12.2 -> 26.2
+TRACE Resolution edge: scikit-build-core -> pathspec
+TRACE Resolution edge:     0.12.2 -> 1.1.1
+DEBUG Installing in vcs-versioning==1.1.1, setuptools==82.0.1, scikit-build-core==0.12.2, pybind11==3.0.4, packaging==26.2, pathspec==1.1.1, setuptools-scm==10.0.5 in /root/.cache/uv/builds-v0/.tmpfEFdXG
+DEBUG Identified uncached distribution: vcs-versioning==1.1.1
+DEBUG Identified uncached distribution: setuptools==82.0.1
+TRACE Comparing installed with source: InstalledDist { kind: Registry(InstalledRegistryDist { name: PackageName("scikit-build-core"), version: "0.12.2", path: "/root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/scikit_build_core-0.12.2.dist-info", cache_info: None, build_info: None }), metadata_cache: OnceLock(<uninit>), tags_cache: OnceLock(<uninit>) } Registry { specifier: VersionSpecifiers([VersionSpecifier { operator: Equal, version: "0.12.2" }]), index: Some(IndexMetadata { url: Pypi(VerbatimUrl { url: DisplaySafeUrl { scheme: "https", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("pypi.org")), port: None, path: "/simple", query: None, fragment: None }, given: None, expanded: false }), format: Simple }), conflict: None }
+DEBUG Requirement already installed: scikit-build-core==0.12.2
+TRACE Comparing installed with source: InstalledDist { kind: Registry(InstalledRegistryDist { name: PackageName("pybind11"), version: "3.0.4", path: "/root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/pybind11-3.0.4.dist-info", cache_info: None, build_info: None }), metadata_cache: OnceLock(<uninit>), tags_cache: OnceLock(<uninit>) } Registry { specifier: VersionSpecifiers([VersionSpecifier { operator: Equal, version: "3.0.4" }]), index: Some(IndexMetadata { url: Pypi(VerbatimUrl { url: DisplaySafeUrl { scheme: "https", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("pypi.org")), port: None, path: "/simple", query: None, fragment: None }, given: None, expanded: false }), format: Simple }), conflict: None }
+DEBUG Requirement already installed: pybind11==3.0.4
+TRACE Comparing installed with source: InstalledDist { kind: Registry(InstalledRegistryDist { name: PackageName("packaging"), version: "26.2", path: "/root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/packaging-26.2.dist-info", cache_info: None, build_info: None }), metadata_cache: OnceLock(<uninit>), tags_cache: OnceLock(<uninit>) } Registry { specifier: VersionSpecifiers([VersionSpecifier { operator: Equal, version: "26.2" }]), index: Some(IndexMetadata { url: Pypi(VerbatimUrl { url: DisplaySafeUrl { scheme: "https", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("pypi.org")), port: None, path: "/simple", query: None, fragment: None }, given: None, expanded: false }), format: Simple }), conflict: None }
+DEBUG Requirement already installed: packaging==26.2
+TRACE Comparing installed with source: InstalledDist { kind: Registry(InstalledRegistryDist { name: PackageName("pathspec"), version: "1.1.1", path: "/root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/pathspec-1.1.1.dist-info", cache_info: None, build_info: None }), metadata_cache: OnceLock(<uninit>), tags_cache: OnceLock(<uninit>) } Registry { specifier: VersionSpecifiers([VersionSpecifier { operator: Equal, version: "1.1.1" }]), index: Some(IndexMetadata { url: Pypi(VerbatimUrl { url: DisplaySafeUrl { scheme: "https", cannot_be_a_base: false, username: "", password: None, host: Some(Domain("pypi.org")), port: None, path: "/simple", query: None, fragment: None }, given: None, expanded: false }), format: Simple }), conflict: None }
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Identified uncached distribution: setuptools-scm==10.0.5
+DEBUG Downloading and building requirements for build: vcs-versioning==1.1.1, setuptools==82.0.1, setuptools-scm==10.0.5
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/setuptools/82.0.1-py3-none-any.http
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl
+TRACE Handling request for https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/vcs-versioning/1.1.1-py3-none-any.http
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl
+TRACE Handling request for https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl
+TRACE No cache entry exists for /root/.cache/uv/wheels-v6/pypi/setuptools-scm/10.0.5-py3-none-any.http
+DEBUG No cache entry for: https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl
+DEBUG Sending fresh GET request for: https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl
+TRACE Handling request for https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl with authentication policy auto
+TRACE Request for https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl is unauthenticated, checking cache
+TRACE No credentials in cache for URL https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl
+TRACE Attempting unauthenticated request for https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl
+TRACE Response from https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl
+TRACE Response from https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl is storable because it has a 'public' cache-control directive
+TRACE Received response for fresh request with status 200 OK for: https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl
+TRACE Response from https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl is storable because it has a 'public' cache-control directive
+DEBUG Installing build requirements: setuptools-scm==10.0.5, vcs-versioning==1.1.1, setuptools==82.0.1
+TRACE Extracting file name=PackageName("setuptools")
+TRACE Extracting file name=PackageName("vcs-versioning")
+TRACE Extracting file name=PackageName("setuptools-scm")
+DEBUG Failed to reflink `/root/.cache/uv/archive-v0/O7GCOiueFZ8vstfc/setuptools_scm-10.0.5.dist-info/licenses/LICENSE` to `/root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/setuptools_scm-10.0.5.dist-info/licenses/LICENSE`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `/root/.cache/uv/archive-v0/q-7GYdiLczNGWwMe/vcs_versioning/_fallbacks.py` to `/root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/vcs_versioning/_fallbacks.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `/root/.cache/uv/archive-v0/QIAq0yOiZkzS_E48/_distutils_hack/override.py` to `/root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/_distutils_hack/override.py`: Operation not supported (os error 95), falling back
+TRACE Extracted 26 files name=PackageName("setuptools-scm")
+TRACE Writing entrypoints name=PackageName("setuptools-scm")
+TRACE No data name=PackageName("setuptools-scm")
+TRACE Writing installer metadata name=PackageName("setuptools-scm")
+TRACE Writing record name=PackageName("setuptools-scm")
+TRACE Extracted 49 files name=PackageName("vcs-versioning")
+TRACE Writing entrypoints name=PackageName("vcs-versioning")
+TRACE No data name=PackageName("vcs-versioning")
+TRACE Writing installer metadata name=PackageName("vcs-versioning")
+TRACE Writing record name=PackageName("vcs-versioning")
+TRACE Extracted 439 files name=PackageName("setuptools")
+TRACE No entrypoints name=PackageName("setuptools")
+TRACE No data name=PackageName("setuptools")
+TRACE Writing installer metadata name=PackageName("setuptools")
+TRACE Writing record name=PackageName("setuptools")
+DEBUG Calling `scikit_build_core.build.build_wheel("/root/.cache/uv/builds-v0/.tmpGPCmVL", {}, None)`
+DEBUG *** scikit-build-core 0.12.2 using CMake 4.3.2 (wheel)
+DEBUG *** Configuring CMake...
+DEBUG 2026-05-08 23:44:33,922 - scikit_build_core - WARNING - Unsupported CMAKE_ARGS ignored: -DCMAKE_BUILD_TYPE=Release
+DEBUG 2026-05-08 23:44:33,933 - scikit_build_core - WARNING - Unsupported CMAKE_ARGS ignored: -DCMAKE_BUILD_TYPE=Release
+DEBUG loading initial cache file /tmp/tmpueem3790/build/CMakeInit.txt
+DEBUG -- The CXX compiler identification is GNU 14.3.0
+DEBUG -- Detecting CXX compiler ABI info
+DEBUG -- Detecting CXX compiler ABI info - done
+DEBUG -- Check for working CXX compiler: /_debug/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+DEBUG -- Detecting CXX compile features
+DEBUG -- Detecting CXX compile features - done
+DEBUG -- Found Python: /root/.cache/uv/builds-v0/.tmpfEFdXG/bin/python (found suitable version "3.14.4", minimum required is "3.8") found components: Interpreter Development.Module Development.Embed
+DEBUG -- Performing Test HAS_FLTO_AUTO
+DEBUG -- Performing Test HAS_FLTO_AUTO - Success
+DEBUG -- Found pybind11: /root/.cache/uv/builds-v0/.tmpfEFdXG/lib/python3.14/site-packages/pybind11/include (found version "3.0.4")
+DEBUG -- Configuring done (0.4s)
+DEBUG CMake Warning:
+DEBUG   Manually-specified variables were not used by the project:
+DEBUG 
+DEBUG     CMAKE_C_COMPILER_AR
+DEBUG     CMAKE_C_COMPILER_RANLIB
+DEBUG 
+DEBUG 
+DEBUG -- Generating done (0.0s)
+DEBUG -- Build files have been written to: /tmp/tmpueem3790/build
+DEBUG 2026-05-08 23:44:34,386 - scikit_build_core - WARNING - Unsupported CMAKE_ARGS ignored: -DCMAKE_BUILD_TYPE=Release
+DEBUG *** Building project with Ninja...
+DEBUG [1/2] Building CXX object CMakeFiles/basic_math.dir/src/basic_math.cpp.o
+ Downloaded numpy
+DEBUG [2/2] Linking CXX shared module basic_math.cpython-314-x86_64-linux-gnu.so
+DEBUG lto-wrapper: warning: using serial compilation of 2 LTRANS jobs
+DEBUG lto-wrapper: note: see the '-flto' option documentation for more information
+DEBUG *** Installing project into wheel...
+DEBUG -- Install configuration: "Release"
+DEBUG -- Installing: /tmp/tmpueem3790/wheel/platlib/rosen_cpp/basic_math.cpython-314-x86_64-linux-gnu.so
+DEBUG *** Making wheel...
+DEBUG *** Created rosen_cpp-0.1.0-cp314-cp314-linux_x86_64.whl
+DEBUG Built `rosen-cpp @ file:///_debug/pixi-build-with-scikit-build-core` into `rosen_cpp-0.1.0-cp314-cp314-linux_x86_64.whl`
+      Built rosen-cpp @ file:///_debug/pixi-build-with-scikit-build-core
+TRACE Released lock at `/root/.cache/uv/sdists-v9/path/b8d1042d4873009d/.lock`
+ Downloaded scipy
+Prepared 3 packages in 7.57s
+TRACE Extracting file name=PackageName("numpy")
+TRACE Extracting file name=PackageName("rosen-cpp")
+DEBUG Failed to reflink `/root/.cache/uv/archive-v0/N0Qb5JgdFm-s_UrQ/rosen_cpp-0.1.0.dist-info/licenses/LICENSE` to `/_debug/.venv/lib/python3.14/site-packages/rosen_cpp-0.1.0.dist-info/licenses/LICENSE`: Operation not supported (os error 95), falling back
+TRACE Extracting file name=PackageName("scipy")
+TRACE Extracted 8 files name=PackageName("rosen-cpp")
+TRACE No entrypoints name=PackageName("rosen-cpp")
+TRACE No data name=PackageName("rosen-cpp")
+TRACE Writing installer metadata name=PackageName("rosen-cpp")
+TRACE Writing record name=PackageName("rosen-cpp")
+DEBUG Failed to reflink `/root/.cache/uv/archive-v0/HDmfSxmHx1v-TNWx/numpy.libs/libquadmath-96973f99-934c22de.so.0.0.0` to `/_debug/.venv/lib/python3.14/site-packages/numpy.libs/libquadmath-96973f99-934c22de.so.0.0.0`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `/root/.cache/uv/archive-v0/XUw2pUlUPEvLjjYP/scipy/constants/constants.py` to `/_debug/.venv/lib/python3.14/site-packages/scipy/constants/constants.py`: Operation not supported (os error 95), falling back
+TRACE Extracted 913 files name=PackageName("numpy")
+TRACE Writing entrypoints name=PackageName("numpy")
+TRACE No data name=PackageName("numpy")
+TRACE Writing installer metadata name=PackageName("numpy")
+TRACE Writing record name=PackageName("numpy")
+TRACE Extracted 1425 files name=PackageName("scipy")
+TRACE No entrypoints name=PackageName("scipy")
+TRACE No data name=PackageName("scipy")
+TRACE Writing installer metadata name=PackageName("scipy")
+TRACE Writing record name=PackageName("scipy")
+Installed 3 packages in 22ms
+ + numpy==2.4.4
+ + rosen-cpp==0.1.0 (from file:///_debug/pixi-build-with-scikit-build-core)
+ + scipy==1.17.1
+TRACE Released lock at `/_debug/.venv/.lock`
+TRACE Released lock at `/root/.cache/uv/.lock`

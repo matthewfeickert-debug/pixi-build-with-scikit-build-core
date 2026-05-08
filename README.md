@@ -78,6 +78,11 @@ TRACE Released lock at `/root/.cache/uv/sdists-v9/editable/df64fc0b914aef95/.loc
       environment.
 ```
 
+Build logs for both the `uv` and `pixi-build` builds were captured in interactive sessions in `ghcr.io/prefix-dev/pixi:latest` Docker containers with
+
+* `uv pip install -vv . &> uv_build_log.txt`
+* `pixi install &> pixi-build_log.txt`
+
 ## Expectation
 
 As `uv pip install` is able to execute the `scikit-build-core` Python package build then `pixi-build` should be able to as well.
