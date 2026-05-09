@@ -2,6 +2,10 @@
 
 Failure of pixi-build-python pixi-build backend 0.4.8 to build a scikit-build-core package
 
+## Related GitHub Issues
+
+* pixi-build fails to build scikit-build-core Python project with pixi-build backend v0.4.8 ([`prefix-dev/pixi` #6057](https://github.com/prefix-dev/pixi/issues/6057))
+
 ## Minimal Failing Example
 
 `src/rosen_cpp` is a minimal example of a Python library with compiled C++ extensions built with `scikit-build-core`.
