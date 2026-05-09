@@ -5,6 +5,7 @@ Failure of pixi-build-python pixi-build backend 0.4.8 to build a scikit-build-co
 ## Related GitHub Issues
 
 * pixi-build fails to build scikit-build-core Python project with pixi-build backend v0.4.8 ([`prefix-dev/pixi` #6057](https://github.com/prefix-dev/pixi/issues/6057))
+* Question: Viable to automatically set CMAKE_GENERATOR default environment variable based on presence of ninja ([`prefix-dev/rattler-build` #2487](https://github.com/prefix-dev/rattler-build/issues/2487))
 
 ## Minimal Failing Example
 
