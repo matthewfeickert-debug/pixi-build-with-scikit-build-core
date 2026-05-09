@@ -86,3 +86,22 @@ Build logs for both the `uv` and `pixi-build` builds were captured in interactiv
 ## Expectation
 
 As `uv pip install` is able to execute the `scikit-build-core` Python package build then `pixi-build` should be able to as well.
+
+## Workaround
+
+`rattler-build` `v0.64.1` exports
+
+```
+CMAKE_GENERATOR='Unix Makefiles'
+```
+
+into the build environment in an non-configurable manner, which overrides `scikit-build-core`'s defaults.
+To avoid this, provide `scikit-build-core` explicit arguments through the `[tool.scikit-build]` table to override the environment and restore the default settings.
+
+```toml
+[tool.scikit-build]
+...
+cmake.args = ["-GNinja"]
+```
+
+I'm not sure if the `rattler-build` behavior is intentional or not.
